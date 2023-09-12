@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/bootstrap';
+
+.body {
+    background-color: #fff;
+    .nav {
+        color: #656565;;
+    }
+}
+.home-body{
+    background-color: #063048;
+    p {
+        color: #fff;
+    }
+    .nav {
+        color: #fff;
+        border-bottom: 1px solid #fff !important;
+    }
+}

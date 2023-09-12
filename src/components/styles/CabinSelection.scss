@@ -1,0 +1,17 @@
+.radio-button {
+    gap: 20px;
+}
+.popover {
+    padding: 7px;
+    border-radius: 0px;
+    &-title, &-check-label {
+        color: #878787;
+    }
+    &-body {
+        padding: 7px;
+    }
+    &-radio {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

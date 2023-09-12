@@ -1,0 +1,32 @@
+.fly {
+    &_rights {
+        p {
+            padding: 7px;
+            font-size: 12px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 2px;
+        }
+    }
+    &_price {
+        span {
+            font-size: 10px;
+            left: -15px;
+        }
+    }
+    &_button {
+        background-color: #E81932;
+        color: #fff;
+        width: 100%;
+        border: none;
+        position: absolute;
+        bottom: 0px;
+        padding: 5px;
+        font-size: 12px;
+        &:focus {
+            outline: none;
+         }
+        &:disabled {
+            background-color: #ddd;
+         }
+    }
+}

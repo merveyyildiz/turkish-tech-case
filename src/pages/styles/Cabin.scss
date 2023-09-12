@@ -1,0 +1,31 @@
+.cabin {
+    margin-top: 8%;
+    &_check {
+        border-bottom: 1px solid #ccc;
+        svg {
+            color: green;
+        }
+        &.error{
+            svg {
+                color: #E81932;
+            }
+        }
+    }
+    &_mesg  {
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    &_amount {
+        span {
+            font-size: 24px;
+        }
+        .price {
+            color: #0973af;
+        }
+        a {
+            background: #E81932;
+            color: #fff;
+            padding: 5px 23px;
+        }
+    }
+}

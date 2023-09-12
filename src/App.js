@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import './App.scss';
+import FlightInquiry from './pages/FlightInquiry';
+import FlightListing from './pages/FlightListing';
+import Cabin from './pages/Cabin';
+import Header from './components/Header';
 
 function App() {
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    const customClass = pathname === "/" ? "home-body" : "body";
+    document.body.classList=customClass;
+  }, [pathname]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+      <Header />
+      <Routes>
+        <Route path="/" exact element={<FlightInquiry />} />
+        <Route path="/ucus-listeleme" exact element={<FlightListing />} />
+        <Route path="/kabin" exact element={<Cabin />} />
+      </Routes>
+      </div>
   );
 }
 

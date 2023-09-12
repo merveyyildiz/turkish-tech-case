@@ -1,0 +1,41 @@
+.inquiry {
+    margin: 5% 10% 5% 10%;
+}
+.form {
+    gap: 7px;
+    background-color: rgb(96 105 119 / 60%);
+    width: max-content;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        width: 95%;
+    }
+    &_sumbit-btn {
+        background-color: #E81932;
+    }
+}
+.form_input {
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.form_date, .form_person {
+    background-color: #25343d;
+}
+.form_person {
+    width: 85px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    &-number {
+        top: 5px;
+        right: 5px;
+    }
+
+}
+.error-msg {
+    font-size: 11px;
+    color: #E81932;
+}

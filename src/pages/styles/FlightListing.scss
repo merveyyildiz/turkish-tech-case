@@ -1,0 +1,33 @@
+.flight-list-component {
+    margin-top: 5%;
+}
+.flight {
+    &_ucus {
+        background-color: #E81932;
+        color: #fff;
+        padding: 3px 30px;
+        font-size: 13px;
+    }
+    &_title {
+        margin: 10px 0px;
+        font-weight: 400;
+    }
+    &_code {
+        font-weight: 600;
+    }
+    &_switch {
+        display: inline-block;
+        margin-left: 15px;
+        input {
+            width: 40px;
+            height: 20px;
+        }
+    }
+}
+.promosyon-text {
+    margin-top: 10px;
+    p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
